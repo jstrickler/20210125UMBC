@@ -1,0 +1,6 @@
+spyder
+PyCharm (security issues???)
+Eclipse with PyDev extension
+Idle
+VS Code with M$ Python Extension
+vim (not for the neophyte)
