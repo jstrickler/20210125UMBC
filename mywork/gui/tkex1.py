@@ -3,12 +3,16 @@ import tkinter as tk
 
 def main():
     def get_values():
-        value1 = float(entry_first_number.get())
-        value2 = float(entry_second_number.get())
+        try:
+            value1 = float(entry_first_number.get())
+            value2 = float(entry_second_number.get())
+        except ValueError as err:
+            tk.
+
         return value1, value2
 
     def display_answer(value):
-        entry_answer.text = (str(value))
+        answer_text.set(str(value))
         print(value)
 
     def add_values():
@@ -31,8 +35,12 @@ def main():
     entry_second_number = tk.Entry(root)
     entry_second_number.pack()
     tk.Label(root, text="Answer").pack()
-    entry_answer = tk.Entry(root)
+
+    answer_text = tk.StringVar()
+
+    entry_answer = tk.Entry(root, textvariable=answer_text)
     entry_answer.pack()
+
 
     button_add = tk.Button(text="ADD", command=add_values)
     button_add.pack()
