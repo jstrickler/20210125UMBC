@@ -14,3 +14,6 @@ for index in range(len(numbers)):
 for number in numbers:
     print(number, end="\t")
 print()
+
+
+

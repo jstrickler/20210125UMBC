@@ -4,6 +4,8 @@ Garcia Rodriguez Wilson Martinez Anderson Taylor
 Thomas Hernandez Moore Martin Jackson Thompson
 White Lopez Davis"""
 names = names.split()
+print(names)
+print('-' * 60)
 # Primary sort by name ("Alphabetically)
 names.sort()
 # Secondary sort by length

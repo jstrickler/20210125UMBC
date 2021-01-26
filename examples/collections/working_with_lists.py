@@ -19,3 +19,6 @@ numbers.sort()
 print(fmt.format("Sorted:", numbers))
 numbers[0] = -99
 print(fmt.format("Modified:", numbers))
+
+del numbers[2]   # del is keyword not function
+print(fmt.format("del numbers[2]:", numbers))

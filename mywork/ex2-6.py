@@ -9,3 +9,4 @@ int2 = float(raw_int2)
 product = int1 * int2
 
 print(f"Product of {int1} and {int2} is {product}")
+222

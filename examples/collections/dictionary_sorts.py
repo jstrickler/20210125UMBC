@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 def get_value(akey):
-    return states[akey]
+    return states.get(akey)
 
 
-states = {'New Hampshire': 'NH', 'Maryland': 'MD',
+states = {'Virginia': 'VA', 'New Hampshire': 'NH', 'Maryland': 'MD',
           'Nevada': 'NV', 'Maine': 'ME'}
 
 # Sorted by Values
@@ -19,3 +19,8 @@ long_names.sort(key=states.get)
 for name in long_names:
     print(name, states[name])
 print()
+
+
+
+
+

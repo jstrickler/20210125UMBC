@@ -5,13 +5,13 @@ tests = {"Sally": (89, 78, 99, 88, 92, 98, 95, 78, 88),
          "John": (89, 78, 99, 88, 92, 99, 95, 88, 95, 99)}
 
 
-def averages(*grades):
+def average(*grades):
     qty = len(grades)
     return sum(grades)/qty
 
 
 a, b, c, d = tests.values()
-x = map(averages, a, b, c, d)
+x = map(average, a, b, c, d)
 print("Averages:", list(x))
 
 
@@ -22,5 +22,5 @@ print("Averages:", list(x))
 # this manner is often referred to as the "splat" operator
 # in other languages.
 
-x = map(averages, *tests.values())
+x = map(average, *tests.values())
 print("Averages:", list(x))

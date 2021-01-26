@@ -11,3 +11,8 @@ total = the_sum(1, 2, 3, 4, 5)
 print("Sum is: ", total)
 total = the_sum(5, 2, 7)
 print("Sum is: ", total)
+total = the_sum()
+print("sum is:", total)
+total = the_sum(1.93, 3, 8.16, 0, -12.883)
+print("Sum is:", total)
+

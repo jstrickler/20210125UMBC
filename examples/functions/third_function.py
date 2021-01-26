@@ -9,3 +9,7 @@ def wrap_with_border(some_text):
 
 
 print("The doc string is:\n", wrap_with_border.__doc__)
+
+result = wrap_with_border("now with documentation!")
+print(result)
+
