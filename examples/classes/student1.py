@@ -2,8 +2,10 @@
 class Student:
 
     def __init__(self, name, major):
+        print("HI MOM!!")
         self.name = name
         self.major = major
+
 
 
 def main():

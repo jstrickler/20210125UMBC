@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-class Shape:
+from abc import ABCMeta, abstractmethod
+
+class Shape(metaclass=ABCMeta):
     id = 100
 
     def __init__(self, name):
@@ -7,7 +9,8 @@ class Shape:
         self.number = Shape.id
         Shape.id += 1
 
-    def area(self):
+    @abstractmethod
+    def area(self):  # use abc module to enforce!
         pass  # Intended o be implemented by subclasses
 
     @property

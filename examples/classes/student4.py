@@ -21,10 +21,10 @@ class Student:
     def major(self, major):
         self._major = major
 
-    def __str__(self):
-        return "{} : {}".format(self.name, self.major)
+    def __str__(self):  # implements str(...)
+        return "Student: {}/{}".format(self.name, self.major)
 
-    def __eq__(self, obj):
+    def __eq__(self, obj):   # implements == operator
         if type(obj) != Student:
             return False
         else:

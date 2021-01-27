@@ -6,6 +6,7 @@
 class Student:
     """ This class represents a Student. This mulitline string will act as
     a doc string since it is declared at the top of the class"""
+    pass
 
 
 def main():
@@ -17,6 +18,9 @@ def main():
     heather = Student()  # Instantiate another Student
     print(jeff, id(jeff), hex(id(jeff)))
     print(heather, id(heather), hex(id(heather)))
+    print(Student, id(Student))
+
+    # help(Student)
 
 
 if __name__ == "__main__":

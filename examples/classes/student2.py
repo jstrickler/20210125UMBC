@@ -22,7 +22,8 @@ def main():
     print(jeff.get_name(), ":", jeff.get_major())
     jeff.set_name("Jeffrey")
     print(jeff.get_name(), ":", jeff.get_major())
-
+    jeff.set_name("Geoff")
+    # jeff.name = "Geoff"
 
 if __name__ == "__main__":
     main()

@@ -16,6 +16,9 @@ def main():
     del malibu
 
     print("# of existing Cars:", Car.quantity)
+    del soul 
+    print(Car.quantity)
+    
 
 
 if __name__ == "__main__":

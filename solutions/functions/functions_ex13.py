@@ -11,3 +11,8 @@
       searched for does not exit in the list.
     • It is perfectly fine for your function to behave in the same manner.
 """
+
+
+items = ['a', 'b', 'a', 'a', 'c', 'd', 'e', 'f', 'a']
+
+find_nth(items, 'a', 3)

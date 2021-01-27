@@ -3,6 +3,7 @@ import sys
 
 
 def main():
+    print("sys.argv:", sys.argv)
     print("Script Name:", sys.argv.pop(0))
     print("Remaining Command Line Arguments:", sys.argv)
 
@@ -11,9 +12,11 @@ def main():
     print(info.major, info.minor, info.micro, sep=".")
 
     print("Python Path:")
-    for each_path in sys.path:
+    for each_path in sys.path:  # where to search for modules
         print("\t", each_path)
     print()
+
+    print(sys.executable)
 
     number = input("Please enter an integer")
     if not number.isdecimal():

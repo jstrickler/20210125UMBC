@@ -2,7 +2,7 @@
 from student4 import Student
 
 
-class GradStudent(Student):
+class GradStudent(Student):  # GradStudent inherits from Student
 
     def __init__(self, name, major, stipend):
         # Pass the name and major to the __init__() of the
