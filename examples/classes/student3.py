@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+class InvalidMajorError(Exception): pass
+
 class Student:   # inherits from object  by default
 
     def __init__(self, name, major):
