@@ -6,7 +6,7 @@ def main():
     fmt = "CursorStart:{:<3}  Offset:{:<3}  Read:{:<3} " +\
           "CursorEnd:{:<3}  Data:{}"
     # Reading from file in binary mode
-    with open("seekdata.txt", "rb") as f:
+    with open("/home/jstrickler/python/pythonlabs/examples/io/seekdata.txt", "rb") as f:
         offset, whence, chunk = (-20, os.SEEK_END, 5)
         f.seek(0, whence)
         start = f.tell()

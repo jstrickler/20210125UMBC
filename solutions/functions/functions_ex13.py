@@ -15,4 +15,20 @@
 
 items = ['a', 'b', 'a', 'a', 'c', 'd', 'e', 'f', 'a']
 
-find_nth(items, 'a', 3)
+def index_nth(items, target, nth):
+   count = 0
+   for i, item in enumerate(items):
+      if target == item:
+           count += 1
+           if count == nth:
+              return i
+          
+   return -1
+
+pos = index_nth(items, 'f', 1)
+print(pos)
+
+target = 'a'
+nth = 3
+print(list(enumerate(items)))
+print(list(filter(lambda x: x[1] == target, enumerate(items)))[nth][0])
