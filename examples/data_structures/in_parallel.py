@@ -10,3 +10,13 @@ fmt = "{:^10} {:^10} {}"
 print(fmt.format("#Days:", "Abbr Name:", "Long Name:"))
 for days, abbr, lng in zip(numdays, abbr_names, long_names):
     print(fmt.format(days, abbr, lng))
+
+list1 = ['a', 'b', 'c', 'd']
+list2 = [10, 20, 30]
+zipped = zip(list1, list2)
+print("zipped: {}\n".format(zipped))
+print(list(zipped))
+
+zipped = zip(list1, list2)
+for x, y in zipped:
+    print(f"x: {x} y: {y}")

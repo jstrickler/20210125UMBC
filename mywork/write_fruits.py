@@ -35,3 +35,6 @@ with open("fruits.txt") as fruit_in:
     all_lines_without_nl = fruit_in.read().splitlines()
     print(all_lines_without_nl)
 print('-' * 60)
+
+import os
+print(os.getcwd())
